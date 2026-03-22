@@ -3,63 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VividOpal Lab | Scaling Digital Identities</title>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>VividOpal Lab | Global Identity & Asset Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Thai:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #06C755; --dark: #111111; --light: #f9f9f9; }
-        body { font-family: 'Prompt', sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
-        nav { background: white; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
-        .logo { font-weight: 600; font-size: 1.5rem; letter-spacing: -1px; }
-        .logo span { color: var(--primary); font-weight: 900; }
-        .nav-links a { margin-left: 30px; text-decoration: none; color: var(--dark); font-size: 0.9rem; }
-        section { padding: 100px 50px; max-width: 1000px; margin: auto; }
-        .hero { text-align: center; background: white; }
-        h1 { font-size: 3rem; margin-bottom: 20px; letter-spacing: -2px; }
-        .btn { background: var(--primary); color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 30px; }
-        .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px; }
-        footer { text-align: center; padding: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #eee; }
+        :root { --primary: #00C853; --dark: #0F172A; --surface: #FFFFFF; --text: #1E293B; --text-light: #64748B; }
+        body { font-family: 'Inter', 'Noto Sans Thai', sans-serif; margin: 0; background: #F8FAFC; color: var(--text); }
+        
+        /* Navigation */
+        nav { background: rgba(255, 255, 255, 0.95); padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #E2E8F0; backdrop-filter: blur(10px); }
+        .logo { font-weight: 700; font-size: 1.5rem; color: var(--dark); }
+        .logo span { color: var(--primary); }
+        .lang-switch { font-size: 0.8rem; font-weight: 600; color: var(--primary); border: 1px solid var(--primary); padding: 4px 10px; border-radius: 4px; }
+
+        /* Hero Section */
+        .hero { background: white; padding: 120px 8%; text-align: left; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+        .hero-content h1 { font-size: 4rem; margin: 0 0 20px 0; letter-spacing: -2px; line-height: 1.1; color: var(--dark); }
+        .hero-content p { font-size: 1.25rem; color: var(--text-light); margin-bottom: 35px; max-width: 600px; }
+        .hero-content p span { display: block; font-size: 1rem; margin-top: 10px; color: var(--primary); font-weight: 500; }
+
+        /* Card Section */
+        .services { padding: 100px 8%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .card { background: white; padding: 40px; border-radius: 16px; border: 1px solid #E2E8F0; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); border-color: var(--primary); }
+        .card h3 { font-size: 1.3rem; margin-top: 0; margin-bottom: 15px; }
+        .card p { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; }
+        .thai-sub { display: block; font-size: 0.85rem; color: var(--primary); margin-top: 8px; font-weight: 400; }
+
+        /* CTA Section */
+        .cta { background: var(--dark); color: white; padding: 100px 8%; text-align: center; }
+        .btn { background: var(--primary); color: white; padding: 18px 45px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: 0.3s; display: inline-block; }
+        .btn:hover { background: #00E676; transform: scale(1.05); }
+
+        footer { background: white; padding: 60px 8%; border-top: 1px solid #E2E8F0; font-size: 0.85rem; color: var(--text-light); }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; }
     </style>
 </head>
 <body>
 
 <nav>
-    <div class="logo">VividOpal Lab<span>.</span></div>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#careers">Careers</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <div class="logo">VividOpal<span>Lab</span></div>
+    <div class="lang-switch">EN / TH</div>
 </nav>
 
 <section class="hero">
-    <h1>Scaling Digital Identities for the Global Market</h1>
-    <p>VividOpal Lab is a specialized digital agency providing strategic asset management and behavioral data analytics.</p>
-    <a href="#careers" class="btn">Submit Portfolio</a>
+    <div class="hero-content">
+        <h1>Global Assets.<br>Optimized for You.</h1>
+        <p>We provide institutional-grade infrastructure for elite digital identities. 
+           <span>ผู้เชี่ยวชาญด้านการจัดการตัวตนดิจิทัลและสินทรัพย์ทั่วโลก</span>
+        </p>
+        <a href="mailto:admin@vividopal.co" class="btn">REQUEST PARTNERSHIP</a>
+    </div>
 </section>
 
-<section id="about">
+<section class="services">
     <div class="card">
-        <h2>Institutional Infrastructure</h2>
-        <p>We provide proprietary visual media management and cross-border identity optimization. Our framework is built on absolute data sovereignty and privacy-first asset distribution.</p>
+        <h3>Identity Scaling</h3>
+        <p>Market-specific positioning and behavioral analytics to maximize equity.</p>
+        <span class="thai-sub">การปรับแต่งตัวตนดิจิทัลเพื่อตลาดสากล</span>
+    </div>
+    <div class="card">
+        <h3>Asset Custody</h3>
+        <p>Secure management of visual intellectual property and digital distribution.</p>
+        <span class="thai-sub">การจัดการและคุ้มครองสินทรัพย์ดิจิทัล</span>
+    </div>
+    <div class="card">
+        <h3>Backend Alpha</h3>
+        <p>Privacy-first technical infrastructure for high-performance creative brands.</p>
+        <span class="thai-sub">โครงสร้างพื้นฐานที่ปลอดภัยสำหรับแบรนด์สร้างสรรค์</span>
     </div>
 </section>
 
-<section id="careers">
-    <div class="card" style="border-left: 5px solid var(--primary);">
-        <h2>Digital Brand Ambassador</h2>
-        <p>We are seeking exclusive partners to represent high-value digital identities. This role involves strategic engagement scaling and visual asset excellence.</p>
-        <p><strong>✓ Remote Flexibility | ✓ Performance-Based Incentives | ✓ Privacy-First Framework</strong></p>
-    </div>
-</section>
-
-<section id="contact" style="text-align: center;">
-    <h2>Get in Touch</h2>
-    <p>Inquiries: admin@vividopal.co</p>
+<section class="cta">
+    <h2>Ready to Scale in the Western Market?</h2>
+    <p style="color: #94A3B8; margin-bottom: 40px;">Join our exclusive network of digital ambassadors.</p>
+    <a href="#contact" class="btn">INQUIRE ACCESS</a>
 </section>
 
 <footer>
-    <p>© 2026 VividOpal Lab LLC. A Wyoming Registered Limited Liability Company.</p>
-    <p><a href="#" style="color:#888;">Privacy Policy</a> | <a href="#" style="color:#888;">Terms of Service</a></p>
+    <div class="footer-grid">
+        <div>
+            <div class="logo">VividOpal<span>Lab</span></div>
+            <p>VividOpal Lab LLC is a Wyoming Registered Entity.</p>
+        </div>
+        <div>
+            <strong>LEGAL</strong><br><br>
+            Privacy Policy<br>
+            Terms of Service
+        </div>
+        <div>
+            <strong>CONTACT</strong><br><br>
+            admin@vividopal.co<br>
+            Wyoming, USA
+        </div>
+    </div>
+    <p style="margin-top: 50px; text-align: center;">© 2026 VividOpal Lab LLC. All Rights Reserved.</p>
 </footer>
 
 </body>
