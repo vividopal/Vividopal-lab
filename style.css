@@ -1,26 +1,26 @@
-/* 覆蓋 style.css 中的 footer 相關樣式 */
+/* 覆蓋原本的 footer 樣式 */
 footer { 
     padding: 120px 8%; 
     background: white; 
     border-top: 1px solid #f1f5f9; 
     display: flex; 
-    justify-content: space-between; /* 讓內容向左右兩端對齊 */
+    justify-content: space-between; /* 關鍵：推向兩端 */
     align-items: flex-start;
-    flex-wrap: wrap; /* 適應手機螢幕 */
+    flex-wrap: wrap; 
 }
 
 .footer-info { 
-    flex: 2; /* 左側公司資訊佔據較多空間 */
-    max-width: 400px;
+    flex: 2; 
+    max-width: 450px; 
     color: #94a3b8; 
     font-size: 0.9rem; 
     line-height: 2.2; 
 }
 
 .footer-column {
-    flex: 1; /* 右側欄目等寬 */
-    min-width: 150px;
-    margin-left: 50px; /* 基礎間距 */
+    flex: 1; 
+    min-width: 180px; 
+    margin-left: 120px; /* 增加物理間距 */
 }
 
 .footer-column strong {
@@ -38,12 +38,9 @@ footer {
     text-decoration: none; 
     margin-bottom: 18px; 
     font-size: 0.9rem;
-    transition: 0.2s;
 }
 
-.footer-column a:hover { color: var(--primary); }
-
 @media (max-width: 900px) {
-    footer { flex-direction: column; gap: 60px; padding: 80px 8%; }
+    footer { flex-direction: column; gap: 60px; }
     .footer-column { margin-left: 0; }
 }
