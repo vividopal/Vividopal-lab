@@ -4,207 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VividOpal Lab | Institutional Infrastructure</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* 通用樣式 */
-        body {
-            font-family: 'Inter', sans-serif; /* 使用 Inter 字體 */
-            background-color: #EDEDED; /* 卡片周圍的淺灰色背景 */
-            margin: 0;
-            color: #1A1A1A; /* 深灰色文本 */
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* 頂部導航列 */
-        header {
-            background-color: #FFFFFF;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 40px;
-            border-bottom: 1px solid #E2E8F0;
-        }
-
-        .header-left, .header-center, .header-right {
-            display: flex;
-            align-items: center;
-        }
-
-        /* 品牌字體樣式 */
-        .vividopal-lab {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-
-        /* Namecheap Logo 替代品 */
-        .namecheap-logo {
-            width: 30px;
-            height: 30px;
-            margin-right: 8px;
-            background-color: #FF6600; /* Namecheap 橙色 */
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        /* 模擬 Namecheap 字體風格 */
-        .namecheap-text {
-            font-weight: 500;
-            font-size: 1rem;
-            letter-spacing: -0.5px;
-        }
-
-        .inbox {
-            font-weight: 500;
-            margin-left: 20px;
-        }
-
-        .small-links {
-            font-size: 0.8rem;
-            color: #666666;
-            margin-right: 15px;
-            cursor: pointer;
-        }
-
-        .dropdown-arrow {
-            font-size: 0.6rem;
-            margin-left: 3px;
-            color: #999999;
-        }
-
-        .cart-icon {
-            margin-left: 10px;
-        }
-
-        /* 主要內容區域 */
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 0;
-        }
-
-        /* 卡片樣式 */
-        .card {
-            background-color: #FFFFFF;
-            max-width: 600px;
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-
-        .card h2 {
-            font-weight: 600;
-            font-size: 1.2rem;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .card-two h2 {
-            margin-bottom: 15px;
-        }
-
-        .card-two p {
-            margin-bottom: 20px;
-        }
-
-        /* 複選標記列表 */
-        .checklist {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .checklist li {
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-
-        .checklist .check {
-            color: #FF6600; /* 著色 ✓ */
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        /* 底部導航菜單 */
-        .bottom-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0;
-            background-color: #EDEDED;
-            margin-top: -30px; /* 將導航向上移動到 main content 的後面 */
-            padding-bottom: 40px;
-        }
-
-        .bottom-nav a {
-            text-decoration: none;
-            color: #1A1A1A;
-            font-size: 0.9rem;
-            margin: 0 15px;
-            font-weight: 400;
-        }
-
-        .bottom-nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <span class="vividopal-lab">VividOpal Lab.</span>
-        </div>
-        <div class="header-center">
-            <div class="namecheap-logo">N</div>
-            <span class="namecheap-text">namecheap</span>
-        </div>
-        <div class="header-right">
-            <span class="inbox">Inbox</span>
-            <span class="small-links">Contact us</span>
-            <span class="small-links">VividOpal <span class="dropdown-arrow">▼</span></span>
-            <span class="small-links">A$ AUD <span class="dropdown-arrow">▼</span></span>
-            <svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 18C4.343 18 3 19.343 3 21C3 22.657 4.343 24 6 24C7.657 24 9 22.657 9 21C9 19.343 7.657 18 6 18ZM20 18C18.343 18 17 19.343 17 21C17 22.657 18.343 24 20 24C21.657 24 23 22.657 23 21C23 19.343 21.657 18 20 18ZM6 0H1V2H3L6.857 16H20.143L24 2H6L6 0Z" fill="#1A1A1A"/></svg>
-        </div>
-    </header>
 
-    <main>
-        <div class="card card-one">
-            <h2>Institutional Infrastructure</h2>
-            <p>We provide proprietary visual media management and cross-border identity optimization. Our framework is built on absolute data sovereignty and privacy-first asset distribution.</p>
-        </div>
-        <div class="card card-two">
-            <h2>Digital Brand Ambassador</h2>
-            <p>We are seeking exclusive partners to represent high-value digital identities. This role involves strategic engagement scaling and visual asset excellence.</p>
-            <ul class="checklist">
-                <li><span class="check">✓</span> Remote Flexibility</li>
-                <li><span class="check">✓</span> Performance-Based Incentives</li>
-                <li><span class="check">✓</span> Privacy-First Framework</li>
-            </ul>
-        </div>
-    </main>
+<nav>
+    <a href="index.html" class="logo">VividOpal<span>.</span>Lab</a>
+    <div class="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="mailto:admin@vividopal.co">CONTACT</a>
+    </div>
+</nav>
 
-    <nav class="bottom-nav">
-        <a href="#">Domains</a>
-        <a href="#">Hosting</a>
-        <a href="#">WordPress</a>
-        <a href="#">Supports</a>
-        <a href="#">Pricing</a>
-        <a href="#">Aios</a>
-    </nav>
+<section class="hero">
+    <div class="hero-text">
+        <h1>Global Assets.<br>Optimized.</h1>
+        <p style="font-size: 1.2rem; color: #64748b;">Specialized infrastructure for elite digital identities in the Western market.</p>
+        <span style="color:var(--primary); font-weight:600;">ผู้เชี่ยวชาญด้านการจัดการสินทรัพย์ดิจิทัลระดับโลก</span><br><br>
+        <a href="mailto:admin@vividopal.co" class="btn">INQUIRE ACCESS</a>
+    </div>
+    <div class="hero-image"></div>
+</section>
+
+<section class="grid" id="services">
+    <div class="card">
+        <h3>Global Strategy</h3>
+        <p>Scaling digital presence through institutional financial frameworks and predictive behavioral modeling.</p>
+        <span class="thai">กลยุทธ์ระดับโลกเพื่อการเติบโต</span>
+    </div>
+    <div class="card">
+        <h3>Elite Network</h3>
+        <p>Connecting premium creative talent with the Western digital market through secure gateways.</p>
+        <span class="thai">เครือข่ายระดับพรีเมียม</span>
+    </div>
+    <div class="card">
+        <h3>Data Security</h3>
+        <p>Military-grade privacy layers ensuring absolute sovereignty and asset protection.</p>
+        <span class="thai">ความปลอดภัยของข้อมูลขั้นสูงสุด</span>
+    </div>
+</section>
+
+<section class="cta">
+    <h2 style="font-size: 3rem; margin-bottom: 40px;">Ready to Scale?</h2>
+    <a href="mailto:admin@vividopal.co" class="btn">JOIN THE NETWORK</a>
+</section>
+
+<footer>
+    <p>© 2026 VividOpal Lab LLC. A Wyoming Registered Entity.</p>
+    <p>
+        <a href="privacy.html">PRIVACY POLICY</a> | 
+        <a href="tos.html">TERMS OF SERVICE</a>
+    </p>
+</footer>
+
 </body>
 </html>
