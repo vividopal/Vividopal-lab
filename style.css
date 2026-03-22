@@ -1,44 +1,49 @@
+/* 覆蓋 style.css 中的 footer 相關樣式 */
 footer { 
-    padding: 100px 8%; 
+    padding: 120px 8%; 
     background: white; 
     border-top: 1px solid #f1f5f9; 
-    text-align: left; 
-    display: grid; 
-    /* 調整比例：讓左側地址塊佔用更多空間，同時拉開右側連結間距 */
-    grid-template-columns: 2.5fr 1.2fr 1.2fr; 
-    /* 增加欄目間距從 40px 到 100px */
-    gap: 100px; 
-}
-
-/* 行動端適應：當屏幕變窄時自動堆疊 */
-@media (max-width: 900px) {
-    footer {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
+    display: flex; 
+    justify-content: space-between; /* 讓內容向左右兩端對齊 */
+    align-items: flex-start;
+    flex-wrap: wrap; /* 適應手機螢幕 */
 }
 
 .footer-info { 
+    flex: 2; /* 左側公司資訊佔據較多空間 */
+    max-width: 400px;
     color: #94a3b8; 
     font-size: 0.9rem; 
     line-height: 2.2; 
 }
 
-.footer-links strong {
-    color: var(--dark);
-    display: block;
-    margin-bottom: 25px; /* 增加標題與連結之間的距離 */
-    font-size: 0.85rem;
-    letter-spacing: 1px;
+.footer-column {
+    flex: 1; /* 右側欄目等寬 */
+    min-width: 150px;
+    margin-left: 50px; /* 基礎間距 */
 }
 
-.footer-links a { 
+.footer-column strong {
+    color: var(--dark);
+    display: block;
+    margin-bottom: 30px;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.footer-column a { 
     display: block; 
     color: #64748b; 
     text-decoration: none; 
-    margin-bottom: 15px; 
+    margin-bottom: 18px; 
     font-size: 0.9rem;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
-.footer-links a:hover { color: var(--primary); }
+.footer-column a:hover { color: var(--primary); }
+
+@media (max-width: 900px) {
+    footer { flex-direction: column; gap: 60px; padding: 80px 8%; }
+    .footer-column { margin-left: 0; }
+}
