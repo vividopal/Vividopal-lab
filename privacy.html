@@ -3,99 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy & Data Sovereignty | VividOpal Lab</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Thai:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Privacy & Asset Protection | VividOpal Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Thai:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        .legal-card {
-            background: var(--surface);
-            padding: 60px;
-            border-radius: 24px; /* 匹配首頁圓角 */
-            border: 1px solid #e2e8f0;
-            max-width: 900px;
-            margin: 40px auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
-        }
+        :root { --primary: #10b981; --dark: #0f172a; --bg: #f8fafc; --surface: #ffffff; --round: 24px; }
+        body { font-family: 'Inter', 'Noto Sans Thai', sans-serif; margin: 0; background: var(--bg); color: var(--dark); -webkit-font-smoothing: antialiased; line-height: 1.6; }
+        
+        nav { padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
+        .logo { font-weight: 800; font-size: 1.4rem; letter-spacing: -1px; text-decoration: none; color: var(--dark); }
+        .logo span { color: var(--primary); }
+
+        .legal-card { background: var(--surface); padding: 60px; border-radius: var(--round); border: 1px solid #e2e8f0; max-width: 900px; margin: 40px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
         .legal-section { margin-bottom: 45px; }
-        .legal-section h2 { 
-            color: var(--dark); 
-            font-size: 1.5rem; 
-            border-bottom: 2px solid var(--primary); 
-            display: inline-block;
-            margin-bottom: 20px;
-        }
+        .legal-section h2 { color: var(--dark); font-size: 1.5rem; border-bottom: 2px solid var(--primary); display: inline-block; margin-bottom: 20px; font-weight: 700; }
+        
+        /* 泰語區塊優化：科技與友好的平衡 */
         .thai-legal { 
-            font-family: 'Noto Sans Thai', sans-serif; 
-            color: #64748b; 
-            font-size: 0.95rem; 
-            margin-top: 15px; 
-            display: block; 
-            line-height: 1.8;
-            background: #f1f5f9;
-            padding: 20px;
-            border-radius: 12px;
+            font-family: 'Noto Sans Thai', sans-serif; color: #64748b; font-size: 0.95rem; margin-top: 15px; 
+            display: block; line-height: 1.8; background: #f1f5f9; padding: 25px; border-radius: 16px; 
         }
-        p { line-height: 1.8; color: #334155; }
+        
+        footer { padding: 60px 8%; text-align: center; font-size: 0.85rem; color: #94a3b8; }
     </style>
 </head>
 <body>
 
 <nav>
     <a href="index.html" class="logo">VividOpal<span>.</span>Lab</a>
-    <div class="nav-links">
-        <a href="index.html">HOME</a>
-        <a href="tos.html">TERMS</a>
-    </div>
 </nav>
 
 <main>
     <div class="legal-card">
-        <h1 style="font-size: 3rem; letter-spacing: -2px; margin-bottom: 10px;">Privacy Policy</h1>
-        <p style="font-weight: 600; color: var(--primary);">Data Sovereignty Framework v3.0</p>
-        <p style="color: #94a3b8; font-size: 0.9rem;">Effective Date: March 22, 2026</p>
+        <h1 style="font-size: 3rem; letter-spacing: -2px; margin: 0;">Privacy Policy</h1>
+        <p style="font-weight: 600; color: var(--primary); margin-bottom: 40px;">Asset Security & Tech Protocol</p>
         
-        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 40px 0;">
-
         <div class="legal-section">
             <h2>1. DATA CONTROLLER</h2>
-            <p>VividOpal Lab LLC, a Wyoming registered entity, acts as the primary Data Controller for the media assets and personal information provided by our partners and creative talent.</p>
-            <span class="thai-legal">VividOpal Lab LLC (จดทะเบียนในรัฐไวโอมิง) ทำหน้าที่เป็นผู้ควบคุมข้อมูลหลักสำหรับสื่อและข้อมูลส่วนบุคคลที่ได้รับจากพันธมิตรและครีเอเตอร์ของเรา</span>
+            <p>VividOpal Lab LLC, a Wyoming registered entity, serves as the primary controller for all digital assets and performance data processed within our technical infrastructure.</p>
+            <span class="thai-legal">VividOpal Lab LLC (จดทะเบียนในรัฐไวโอมิง) ทำหน้าที่เป็นผู้ควบคุมหลักสำหรับสินทรัพย์ดิจิทัลและข้อมูลประสิทธิภาพทั้งหมดที่ประมวลผลภายในโครงสร้างพื้นฐานทางเทคนิคของเรา</span>
         </div>
 
         <div class="legal-section">
-            <h2>2. MEDIA & IDENTITY COLLECTION</h2>
-            <p>To optimize your digital presence, we collect visual media (photos/videos), metadata, and professional identifiers. We handle all sensitive content with military-grade encryption protocols.</p>
-            <span class="thai-legal">เพื่อเพิ่มประสิทธิภาพให้กับแบรนด์ของคุณ เราเก็บรวบรวมสื่อตามภาพ (รูปภาพ/วิดีโอ) และข้อมูลระบุตัวตนทางวิชาชีพ เราจัดการเนื้อหาที่มีความละเอียดอ่อนทั้งหมดด้วยโปรโตคอลการเข้ารหัสระดับสูงสุด</span>
+            <h2>2. ASSET OPTIMIZATION</h2>
+            <p>We leverage AI-driven analytics to optimize visual media and identity performance. All partner information is handled through secure, high-encryption gateways to maintain professional integrity.</p>
+            <span class="thai-legal">เราใช้การวิเคราะห์ที่ขับเคลื่อนด้วย AI เพื่อเพิ่มประสิทธิภาพสื่อภาพและตัวตน ข้อมูลของพันธมิตรทั้งหมดจะถูกจัดการผ่านช่องทางที่มีการเข้ารหัสสูงเพื่อรักษาความสมบูรณ์ระดับมืออาชีพ</span>
         </div>
 
         <div class="legal-section">
-            <h2>3. THAI PDPA COMPLIANCE</h2>
-            <p>For partners in Thailand, we strictly adhere to the Personal Data Protection Act (PDPA). Your data is processed based on explicit consent for the purpose of international brand scaling. You retain the right to access and rectify your information at any time.</p>
-            <span class="thai-legal">สำหรับพันธมิตรในประเทศไทย เราปฏิบัติตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) อย่างเคร่งครัด ข้อมูลของคุณจะถูกประมวลผลตามความยินยอมที่ชัดเจนเพื่อการขยายแบรนด์สู่สากล คุณมีสิทธิ์เข้าถึงและแก้ไขข้อมูลของคุณได้ทุกเมื่อ</span>
+            <h2>3. PDPA COMPLIANCE</h2>
+            <p>We operate in full alignment with the Personal Data Protection Act (PDPA). Your information is processed based on explicit technical mandates for the purpose of global brand scaling.</p>
+            <span class="thai-legal">เราดำเนินงานตามพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล (PDPA) ข้อมูลของคุณจะถูกประมวลผลตามข้อกำหนดทางเทคนิคที่ชัดเจนเพื่อวัตถุประสงค์ในการขยายแบรนด์ไปสู่ระดับสากล</span>
         </div>
 
         <div class="legal-section">
-            <h2>4. ASSET SOVEREIGNTY & SHARING</h2>
-            <p>We do not sell your personal data. Media assets are shared exclusively with authorized platforms (e.g., OnlyFans) as part of our management mandate. Data may be transferred across borders (US/AU/TH) to facilitate global operations.</p>
-            <span class="thai-legal">เราไม่ขายข้อมูลส่วนบุคคลของคุณ สื่อและไฟล์ต่างๆ จะถูกแบ่งปันเฉพาะกับแพลตฟอร์มที่ได้รับอนุญาต (เช่น OnlyFans) ข้อมูลอาจมีการถ่ายโอนข้ามพรมแดนเพื่อรองรับการดำเนินงานทั่วโลก</span>
+            <h2>4. ASSET PROTECTION & MANAGEMENT</h2>
+            <p>We do not sell personal data. Media assets are managed through verified secure protocols for the sole purpose of infrastructure deployment and optimization. All data is handled within a restricted environment to ensure maximum asset protection.</p>
+            <span class="thai-legal">เราไม่ขายข้อมูลส่วนบุคคลของคุณ สินทรัพย์ดิจิทัลจะถูกจัดการผ่านโปรโตคอลความปลอดภัยที่ได้รับการตรวจสอบแล้ว เพื่อวัตถุประสงค์ในการติดตั้งและเพิ่มประสิทธิภาพโครงสร้างพื้นฐานเท่านั้น ข้อมูลทั้งหมดจะถูกจัดการภายใต้สภาพแวดล้อมที่จำกัดเพื่อให้การคุ้มครองสินทรัพย์สูงสุด</span>
         </div>
 
         <div class="legal-section">
-            <h2>5. DATA RETENTION & SECURITY</h2>
-            <p>We retain your information only as long as necessary for our partnership or legal obligations. Upon termination, data is either securely archived for legal defense or permanently erased from our technical infrastructure.</p>
-            <span class="thai-legal">เราเก็บรักษาข้อมูลของคุณเท่าที่จำเป็นสำหรับความร่วมมือหรือตามข้อกำหนดทางกฎหมาย เมื่อสิ้นสุดความร่วมมือ ข้อมูลจะถูกเก็บถาวรอย่างปลอดภัยหรือถูกลบออกจากระบบของเราถาวร</span>
-        </div>
-
-        <div class="legal-section">
-            <h2>6. CONTACT US</h2>
-            <p>To exercise your privacy rights, please contact our Data Sovereignty Officer at: <strong>admin@vividopal.co</strong></p>
+            <h2>5. SECURITY PROTOCOLS</h2>
+            <p>Data retention is limited to the duration of the operational partnership. Upon termination, assets are securely archived or permanently erased from our AI optimization engines.</p>
+            <span class="thai-legal">การเก็บรักษาข้อมูลจะจำกัดอยู่เพียงระยะเวลาของความร่วมมือในการดำเนินงาน เมื่อสิ้นสุดสัญญา สินทรัพย์จะถูกจัดเก็บอย่างปลอดภัยหรือถูกลบออกจากระบบ AI ของเราถาวร</span>
         </div>
     </div>
 </main>
 
 <footer>
     <p>VIVIDOPAL LAB LLC | WYOMING REGISTERED ENTITY | admin@vividopal.co</p>
-    <p>© 2026 ALL RIGHTS RESERVED. PROTECTED BY SOVEREIGN HACKER PROTOCOL.</p>
+    <p>© 2026 ALL RIGHTS RESERVED. SECURED BY VIVIDOPAL INFRASTRUCTURE.</p>
 </footer>
 
 </body>
