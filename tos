@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | VividOpal Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Thai:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* 繼承 style.css 並針對法律文件微調 */
+        .legal-card {
+            background: var(--surface);
+            padding: 60px;
+            border-radius: 24px; /* 圓角優化 */
+            border: 1px solid #333;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+        .legal-section { margin-bottom: 40px; }
+        .legal-section h2 { color: var(--primary); font-size: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .thai-block { 
+            font-family: 'Noto Sans Thai', sans-serif; 
+            color: #888; 
+            font-size: 0.9rem; 
+            margin-top: 10px; 
+            display: block; 
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">VividOpal<span>.</span>Lab</a>
+    <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="privacy.html">PRIVACY</a>
+    </div>
+</nav>
+
+<main>
+    <div class="legal-card">
+        <h1>Terms of Service</h1>
+        <p style="color: var(--text-dim);">Effective Date: March 22, 2026</p>
+        
+        <div class="legal-section">
+            <h2>1. ACCEPTANCE OF TERMS</h2>
+            <p>By accessing or using the services provided by VividOpal Lab LLC ("VividOpal"), you agree to be bound by these Terms of Service. If you do not agree, please cease all use of our infrastructure immediately.</p>
+            <span class="thai-block">ในการเข้าถึงหรือใช้บริการที่จัดทำโดย VividOpal Lab LLC ("VividOpal") คุณตกลงที่จะผูกพันตามข้อกำหนดในการให้บริการเหล่านี้ หากคุณไม่ตกลง โปรดยุติการใช้โครงสร้างพื้นฐานของเราทันที</span>
+        </div>
+
+        <div class="legal-section">
+            <h2>2. DESCRIPTION OF SERVICES</h2>
+            <p>VividOpal provides digital identity scaling, visual asset management, and behavioral data modeling for high-performance creative entities. All services are governed by our proprietary "Sovereignty Framework".</p>
+            <span class="thai-block">VividOpal ให้บริการการขยายตัวตนดิจิทัล การจัดการสินทรัพย์ภาพ และการจำลองข้อมูลพฤติกรรมสำหรับเอนทิตีสร้างสรรค์ที่มีประสิทธิภาพสูง บริการทั้งหมดอยู่ภายใต้ "กรอบการทำงานอธิปไตย" ของเรา</span>
+        </div>
+
+        <div class="legal-section">
+            <h2>3. ELIGIBILITY & CONDUCT</h2>
+            <p>Users must be at least 18 years of age. You agree to provide accurate information and maintain the absolute integrity of the data and identities managed within our ecosystem. Any breach of legal compliance (including 18 U.S.C. 2257) will result in immediate termination.</p>
+            <span class="thai-block">ผู้ใช้ต้องมีอายุอย่างน้อย 18 ปี คุณตกลงที่จะให้ข้อมูลที่ถูกต้องและรักษาความสมบูรณ์ของข้อมูลและตัวตนที่จัดการภายในระบบนิเวศของเรา การละเมิดการปฏิบัติตามกฎหมายใดๆ จะส่งผลให้มีการยุติการให้บริการทันที</span>
+        </div>
+
+        <div class="legal-section">
+            <h2>4. INTELLECTUAL PROPERTY</h2>
+            <p>VividOpal retains all rights to its proprietary algorithms, technical infrastructure, and management methodologies. Partners retain ownership of original visual content, subject to the licensing agreements required for optimization and distribution.</p>
+            <span class="thai-block">VividOpal ขอสงวนสิทธิ์ทั้งหมดในอัลกอริทึมที่เป็นกรรมสิทธิ์ โครงสร้างพื้นฐานทางเทคนิค และวิธีการจัดการ พันธมิตรยังคงเป็นเจ้าของเนื้อหาภาพต้นฉบับ ภายใต้ข้อตกลงการอนุญาตที่จำเป็นสำหรับการเพิ่มประสิทธิภาพและการจัดจำหน่าย</span>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. GOVERNING LAW</h2>
+            <p>These terms are governed by the laws of the State of Wyoming, USA, without regard to conflict of law principles. Any disputes shall be resolved in the competent courts of Wyoming.</p>
+            <span class="thai-block">ข้อกำหนดเหล่านี้อยู่ภายใต้กฎหมายของรัฐไวโอมิง สหรัฐอเมริกา ข้อพิพาทใดๆ จะต้องได้รับการแก้ไขในศาลที่มีอำนาจของรัฐไวโอมิง</span>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. CONTACT</h2>
+            <p>Inquiries regarding these terms should be directed to: <strong>admin@vividopal.co</strong></p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>VIVIDOPAL LAB LLC | WYOMING REGISTERED ENTITY</p>
+    <p>© 2026 ALL RIGHTS RESERVED.</p>
+</footer>
+
+</body>
+</html>
