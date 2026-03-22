@@ -1,46 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Thai:wght@300;400;600&display=swap');
-
-:root { 
-    --primary: #00ff88; 
-    --dark: #0f172a; 
-    --bg: #f8fafc;
-    --card: #ffffff;
-    --round: 24px; /* 你要求的大圓角 */
+footer { 
+    padding: 100px 8%; 
+    background: white; 
+    border-top: 1px solid #f1f5f9; 
+    text-align: left; 
+    display: grid; 
+    /* 調整比例：讓左側地址塊佔用更多空間，同時拉開右側連結間距 */
+    grid-template-columns: 2.5fr 1.2fr 1.2fr; 
+    /* 增加欄目間距從 40px 到 100px */
+    gap: 100px; 
 }
 
-body { 
-    font-family: 'Inter', 'Noto Sans Thai', sans-serif; 
-    margin: 0; background: var(--bg); color: var(--dark); 
-    -webkit-font-smoothing: antialiased; scroll-behavior: smooth;
+/* 行動端適應：當屏幕變窄時自動堆疊 */
+@media (max-width: 900px) {
+    footer {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 }
 
-/* 專業導航列 */
-nav { 
-    padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; 
-    background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); 
-    position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e2e8f0;
+.footer-info { 
+    color: #94a3b8; 
+    font-size: 0.9rem; 
+    line-height: 2.2; 
 }
-.logo { font-weight: 800; font-size: 1.4rem; letter-spacing: -1px; text-decoration: none; color: var(--dark); }
-.logo span { color: var(--primary); }
-.nav-links a { margin-left: 25px; text-decoration: none; color: #64748b; font-size: 0.85rem; font-weight: 600; }
 
-/* Hero 區塊 - 帶有照片 */
-.hero { padding: 100px 8%; display: flex; align-items: center; gap: 50px; background: white; }
-.hero-text { flex: 1; }
-.hero-text h1 { font-size: 4rem; font-weight: 800; letter-spacing: -3px; line-height: 1; margin-bottom: 20px; }
-.hero-image { flex: 1; height: 450px; background: #e2e8f0 url('hero.jpg') center/cover; border-radius: var(--round); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); }
+.footer-links strong {
+    color: var(--dark);
+    display: block;
+    margin-bottom: 25px; /* 增加標題與連結之間的距離 */
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
 
-/* 卡片佈局 - 匹配 Professional Ecosystem 圖片 */
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; padding: 80px 8%; }
-.card { background: var(--card); padding: 40px; border-radius: var(--round); border: 1px solid #e2e8f0; transition: 0.3s; }
-.card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-.card h3 { font-weight: 700; margin-top: 0; font-size: 1.4rem; }
-.card p { color: #64748b; font-size: 0.95rem; line-height: 1.6; }
-.thai { font-family: 'Noto Sans Thai'; color: var(--primary); font-size: 0.85rem; display: block; margin-top: 10px; }
+.footer-links a { 
+    display: block; 
+    color: #64748b; 
+    text-decoration: none; 
+    margin-bottom: 15px; 
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
 
-/* 底部 CTA */
-.cta { background: var(--dark); color: white; padding: 100px 8%; text-align: center; border-radius: 40px 40px 0 0; }
-.btn { background: var(--primary); color: var(--dark); padding: 18px 45px; border-radius: 12px; text-decoration: none; font-weight: 700; display: inline-block; }
-
-footer { padding: 50px 8%; background: white; border-top: 1px solid #e2e8f0; text-align: center; font-size: 0.8rem; color: #94a3b8; }
-footer a { color: #94a3b8; text-decoration: none; margin: 0 15px; }
+.footer-links a:hover { color: var(--primary); }
