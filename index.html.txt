@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VividOpal Lab | Scaling Digital Identities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #06C755; --dark: #111111; --light: #f9f9f9; }
+        body { font-family: 'Prompt', sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+        nav { background: white; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .logo { font-weight: 600; font-size: 1.5rem; letter-spacing: -1px; }
+        .logo span { color: var(--primary); font-weight: 900; }
+        .nav-links a { margin-left: 30px; text-decoration: none; color: var(--dark); font-size: 0.9rem; }
+        section { padding: 100px 50px; max-width: 1000px; margin: auto; }
+        .hero { text-align: center; background: white; }
+        h1 { font-size: 3rem; margin-bottom: 20px; letter-spacing: -2px; }
+        .btn { background: var(--primary); color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 30px; }
+        .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        footer { text-align: center; padding: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">VividOpal Lab<span>.</span></div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Scaling Digital Identities for the Global Market</h1>
+    <p>VividOpal Lab is a specialized digital agency providing strategic asset management and behavioral data analytics.</p>
+    <a href="#careers" class="btn">Submit Portfolio</a>
+</section>
+
+<section id="about">
+    <div class="card">
+        <h2>Institutional Infrastructure</h2>
+        <p>We provide proprietary visual media management and cross-border identity optimization. Our framework is built on absolute data sovereignty and privacy-first asset distribution.</p>
+    </div>
+</section>
+
+<section id="careers">
+    <div class="card" style="border-left: 5px solid var(--primary);">
+        <h2>Digital Brand Ambassador</h2>
+        <p>We are seeking exclusive partners to represent high-value digital identities. This role involves strategic engagement scaling and visual asset excellence.</p>
+        <p><strong>✓ Remote Flexibility | ✓ Performance-Based Incentives | ✓ Privacy-First Framework</strong></p>
+    </div>
+</section>
+
+<section id="contact" style="text-align: center;">
+    <h2>Get in Touch</h2>
+    <p>Inquiries: admin@vividopal.co</p>
+</section>
+
+<footer>
+    <p>© 2026 VividOpal Lab LLC. A Wyoming Registered Limited Liability Company.</p>
+    <p><a href="#" style="color:#888;">Privacy Policy</a> | <a href="#" style="color:#888;">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
