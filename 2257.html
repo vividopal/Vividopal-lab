@@ -1,175 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>18 U.S.C. § 2257 Compliance | Vivid Opal Lab LLC</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Page-specific styles matching privacy.html / tos.html */
-    .legal-page {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 60px 24px 80px;
-      font-family: 'Arial', sans-serif;
-      color: #1C1008;
-      line-height: 1.75;
-    }
-    .legal-page h1 {
-      font-family: 'Georgia', serif;
-      font-size: 2rem;
-      font-weight: 400;
-      color: #1C1008;
-      margin-bottom: 8px;
-    }
-    .legal-page .effective-date {
-      font-size: 0.85rem;
-      color: #8C7B6E;
-      margin-bottom: 40px;
-    }
-    .legal-page h2 {
-      font-family: 'Georgia', serif;
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: #C4687A;
-      margin-top: 36px;
-      margin-bottom: 10px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #E8DDD6;
-    }
-    .legal-page p {
-      font-size: 0.92rem;
-      color: #3D2010;
-      margin-bottom: 14px;
-    }
-    .legal-page .statement-box {
-      background: #FAF7F4;
-      border-left: 3px solid #C4687A;
-      padding: 20px 24px;
-      margin: 28px 0;
-      font-size: 0.88rem;
-      color: #1C1008;
-      font-style: italic;
-      line-height: 1.8;
-    }
-    .legal-page .custodian-block {
-      background: #FAF7F4;
-      border: 1px solid #E8DDD6;
-      padding: 20px 24px;
-      margin: 24px 0;
-      font-size: 0.88rem;
-      color: #1C1008;
-    }
-    .legal-page .custodian-block strong {
-      color: #C4687A;
-      display: block;
-      margin-bottom: 8px;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .legal-page a {
-      color: #C4687A;
-      text-decoration: none;
-    }
-    .legal-page a:hover {
-      text-decoration: underline;
-    }
-    .divider {
-      border: none;
-      border-top: 1px solid #E8DDD6;
-      margin: 40px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18 U.S.C. § 2257 Compliance | Vivid Opal Lab LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blush: #f9e8e8;
+            --rose: #e8b4b8;
+            --rose-deep: #c97b84;
+            --champagne: #f5ede0;
+            --gold: #c9a96e;
+            --dark: #2a1f1f;
+            --muted: #8a7070;
+            --white: #fdfbfb;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--dark); -webkit-font-smoothing: antialiased; display: flex; flex-direction: column; min-height: 100vh; }
+        nav { padding: 28px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; background: rgba(253,251,251,0.88); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(232,180,184,0.25); }
+        .logo { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.35rem; letter-spacing: 1px; text-decoration: none; color: var(--dark); }
+        .logo span { color: var(--rose-deep); }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a { font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; font-weight: 500; }
+        .nav-links a:hover { color: var(--rose-deep); }
+        .nav-links a.contact-btn { background: var(--rose-deep); color: white; padding: 10px 24px; border-radius: 30px; font-size: 0.72rem; }
+        .nav-links a.contact-btn:hover { background: var(--dark); }
+        main { flex: 1; padding: 80px 8%; max-width: 900px; margin: 0 auto; width: 100%; }
+        .page-eyebrow { font-size: 0.72rem; letter-spacing: 3.5px; text-transform: uppercase; color: var(--rose-deep); margin-bottom: 20px; font-weight: 500; display: flex; align-items: center; gap: 12px; }
+        .page-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--rose-deep); }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 4vw, 3.5rem); font-weight: 300; letter-spacing: -1px; line-height: 1.15; margin-bottom: 12px; }
+        .effective-date { font-size: 0.82rem; color: var(--muted); margin-bottom: 60px; font-weight: 300; }
+        .section { margin-bottom: 48px; }
+        .section-label { font-size: 0.68rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--rose-deep); margin-bottom: 14px; font-weight: 500; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; color: var(--dark); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid rgba(232,180,184,0.3); }
+        p { font-size: 0.92rem; color: var(--muted); line-height: 1.9; font-weight: 300; margin-bottom: 14px; }
+        p strong { color: var(--dark); font-weight: 500; }
+        .info-card { background: var(--blush); border: 1px solid rgba(232,180,184,0.4); border-radius: 16px; padding: 28px 32px; margin: 20px 0; font-size: 0.88rem; color: var(--dark); line-height: 2; }
+        .info-card .card-label { font-size: 0.65rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--rose-deep); margin-bottom: 12px; font-weight: 500; }
+        .statement-box { background: var(--champagne); border-left: 3px solid var(--rose-deep); border-radius: 0 12px 12px 0; padding: 24px 28px; margin: 20px 0; font-size: 0.88rem; color: var(--dark); line-height: 1.9; font-style: italic; }
+        a { color: var(--rose-deep); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer { padding: 70px 8% 50px; border-top: 1px solid rgba(232,180,184,0.25); display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 50px; }
+        .footer-brand-name { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px; }
+        .footer-brand-name span { color: var(--rose-deep); }
+        .footer-info p { font-size: 0.82rem; color: var(--muted); line-height: 2.1; font-weight: 300; }
+        .footer-reg { font-size: 0.68rem; color: rgba(138,112,112,0.4); margin-top: 12px; }
+        .footer-column strong { font-size: 0.65rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 20px; }
+        .footer-column a { display: block; font-size: 0.88rem; color: var(--dark); text-decoration: none; margin-bottom: 12px; font-weight: 300; transition: color 0.2s; }
+        .footer-column a:hover { color: var(--rose-deep); }
+        .footer-bottom { width: 100%; border-top: 1px solid rgba(232,180,184,0.2); padding-top: 28px; font-size: 0.75rem; color: rgba(138,112,112,0.5); display: flex; justify-content: space-between; }
+    </style>
 </head>
 <body>
+<nav>
+    <a href="index.html" class="logo">Vivid Opal<span>.</span>Lab</a>
+    <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="/th/">Career</a>
+        <a href="mailto:admin@vividopal.co" class="contact-btn">Contact</a>
+    </div>
+</nav>
 
-  <!-- Navigation — matching site header -->
-  <nav>
-    <a href="https://vividopal.co/index.html" class="nav-logo">Vivid Opal.Lab</a>
-    <ul class="nav-links">
-      <li><a href="https://vividopal.co/#about">ABOUT</a></li>
-      <li><a href="https://vividopal.co/th/">CAREER</a></li>
-      <li><a href="mailto:admin@vividopal.co" class="nav-cta">CONTACT</a></li>
-    </ul>
-  </nav>
-
-  <div class="legal-page">
-
-    <h1>18 U.S.C. § 2257 Compliance Statement</h1>
+<main>
+    <div class="page-eyebrow">Legal</div>
+    <h1>18 U.S.C. § 2257<br>Compliance</h1>
     <p class="effective-date">Effective Date: March 22, 2026</p>
 
-    <h2>1. Statutory Compliance</h2>
-    <p>
-      Vivid Opal Lab LLC ("the Company") is in full compliance with the record-keeping requirements of
-      <strong>18 U.S.C. § 2257</strong> and its implementing regulations at
-      <strong>28 C.F.R. Part 75</strong>.
-    </p>
-    <p>
-      All visual depictions of sexually explicit conduct displayed on platforms managed by Vivid Opal Lab LLC
-      feature only persons who were at least eighteen (18) years of age at the time of the creation of such depictions.
-    </p>
-
-    <h2>2. Custodian of Records</h2>
-    <p>
-      Records required to be maintained pursuant to 18 U.S.C. § 2257 are kept by the designated
-      Custodian of Records at the following address:
-    </p>
-
-    <div class="custodian-block">
-      <strong>Custodian of Records</strong>
-      Vivid Opal Lab LLC<br />
-      75 E 3rd St, Sheridan, WY 82801<br />
-      United States of America<br /><br />
-      WY Registration: 2026-001926936<br />
-      Email: <a href="mailto:admin@vividopal.co">admin@vividopal.co</a>
+    <div class="section">
+        <div class="section-label">01</div>
+        <h2>Regulatory Compliance</h2>
+        <p>Vivid Opal Lab LLC ("the Company") maintains full compliance with applicable United States federal record-keeping regulations, including <strong>18 U.S.C. § 2257</strong> and <strong>28 C.F.R. Part 75</strong>.</p>
+        <p>All digital media managed or distributed by Vivid Opal Lab LLC features exclusively individuals who were verified to be at least <strong>eighteen (18) years of age</strong> at the time of production. Age verification documentation is maintained in accordance with applicable federal law.</p>
     </div>
 
-    <h2>3. Exemption Statement</h2>
-    <p>
-      Vivid Opal Lab LLC operates as a content management agency. The Company does not directly produce
-      primary visual depictions of sexually explicit conduct. In accordance with 28 C.F.R. § 75.8,
-      the Company maintains secondary producer records for all managed content creators.
-    </p>
-
-    <h2>4. Record Retention</h2>
-    <p>
-      All records required under 18 U.S.C. § 2257 are retained for a minimum period of seven (7) years
-      from the date of production of the visual depiction, or five (5) years from the last date the content
-      was sold, distributed, or otherwise disseminated — whichever period is longer.
-    </p>
-    <p>
-      Records are maintained in an encrypted, access-controlled environment and are available for
-      inspection by authorised officials upon lawful request within seventy-two (72) hours.
-    </p>
-
-    <h2>5. Standard Statement</h2>
-    <div class="statement-box">
-      "In compliance with 18 U.S.C. § 2257 Record Keeping Requirements Compliance Statement, all models,
-      actors, actresses and other persons who appear in any visual depiction of actual or simulated sexually
-      explicit conduct appearing or otherwise contained in or at websites managed by Vivid Opal Lab LLC were
-      over the age of eighteen (18) years at the time of the creation of such depictions. Records required
-      to be maintained pursuant to 18 U.S.C. § 2257 are kept by the Custodian of Records at Vivid Opal Lab
-      LLC, 75 E 3rd St, Sheridan, WY 82801, USA."
+    <div class="section">
+        <div class="section-label">02</div>
+        <h2>Custodian of Records</h2>
+        <p>All records required under applicable federal regulations are maintained by the designated Custodian of Records at the following address:</p>
+        <div class="info-card">
+            <div class="card-label">Custodian of Records</div>
+            Vivid Opal Lab LLC<br>
+            75 E 3rd St, Sheridan, WY 82801<br>
+            United States of America<br><br>
+            WY Registration: 2026-001926936<br>
+            Email: <a href="mailto:legal@vividopal.co">legal@vividopal.co</a>
+        </div>
     </div>
 
-    <hr class="divider" />
+    <div class="section">
+        <div class="section-label">03</div>
+        <h2>Secondary Producer Status</h2>
+        <p>Vivid Opal Lab LLC operates exclusively as a <strong>digital content management agency</strong>. The Company functions as a secondary producer as defined under 28 C.F.R. § 75.8, and maintains all required documentation for managed content creators in accordance with this classification.</p>
+    </div>
 
-    <!-- Footer — matching site footer -->
-    <footer style="font-size:0.82rem; color:#8C7B6E; margin-top: 40px;">
-      <p><strong style="color:#1C1008;">VIVID OPAL LAB LLC</strong></p>
-      <p>75 E 3rd St, Sheridan, WY 82801, USA<br />
-      WY Registration: 2026-001926936<br />
-      <a href="mailto:admin@vividopal.co">admin@vividopal.co</a></p>
-      <p style="margin-top:16px;">
-        <strong>LEGAL</strong><br />
-        <a href="https://vividopal.co/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
-        <a href="https://vividopal.co/tos.html">Terms of Service</a> &nbsp;·&nbsp;
-        <a href="https://vividopal.co/2257.html">18 U.S.C. § 2257</a>
-      </p>
-    </footer>
+    <div class="section">
+        <div class="section-label">04</div>
+        <h2>Record Retention</h2>
+        <p>All required records are retained for a minimum of <strong>seven (7) years</strong> from the date of production, or five (5) years from the last date of distribution — whichever period is longer.</p>
+        <p>Records are stored in an encrypted, access-controlled environment and are available to authorised officials upon lawful request within <strong>seventy-two (72) hours</strong>.</p>
+    </div>
 
-  </div>
+    <div class="section">
+        <div class="section-label">05</div>
+        <h2>Compliance Statement</h2>
+        <div class="statement-box">
+            In compliance with 18 U.S.C. § 2257 Record Keeping Requirements, all individuals appearing in digital media managed by Vivid Opal Lab LLC were eighteen (18) years of age or older at the time of production. Records are maintained by the Custodian of Records at Vivid Opal Lab LLC, 75 E 3rd St, Sheridan, WY 82801, USA.
+        </div>
+    </div>
+</main>
 
+<footer>
+    <div class="footer-info" style="flex:2; max-width:400px;">
+        <div class="footer-brand-name">Vivid Opal<span>.</span>Lab LLC</div>
+        <p>75 E 3rd St, Sheridan, WY 82801, USA<br>Tel: +1 (307) 317-3131<br>Email: admin@vividopal.co</p>
+        <div class="footer-reg">WY Registration: 2026-001926936</div>
+    </div>
+    <div class="footer-column" style="flex:1; min-width:140px;">
+        <strong>Legal</strong>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="2257.html">18 U.S.C. § 2257</a>
+    </div>
+    <div class="footer-column" style="flex:1; min-width:140px;">
+        <strong>Career</strong>
+        <a href="/th/">Career</a>
+        <a href="mailto:admin@vividopal.co">Partnerships</a>
+        <a href="https://line.me/R/ti/p/@vividopal" target="_blank">LINE: @vividopal</a>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Vivid Opal Lab LLC. All rights reserved.</span>
+        <span>Digital Creator Agency</span>
+    </div>
+</footer>
 </body>
 </html>
